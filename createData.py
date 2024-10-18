@@ -1,10 +1,10 @@
-import cv2 , os
+import cv2 , os # os used to directory based work 
 
-haar_file='haarcascade_frontalface_default.xml'
+haar_file='haarcascade_frontalface_default.xml' # store the algorithm initianing 
 datasets='datasets'
 sub_data= input("enter the name: ")
-path=os.path.join(datasets,sub_data)  #datasets/siva
-if not os.path.exists(path):
+path=os.path.join(datasets,sub_data)  #datasets/Entered name
+if not os.path.isdir(path):
     os.makedirs(path)
 (width, height) = (130,100)        #frame.shape[:2]
 face_cascade = cv2.CascadeClassifier(haar_file) #algorithm  loading the haar file
@@ -28,3 +28,4 @@ while count<51:
         break
 webCam.release()
 cv2.destroyAllWindows()
+ 
