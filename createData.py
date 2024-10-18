@@ -5,7 +5,7 @@ datasets='datasets'
 sub_data= input("enter the name: ")
 path=os.path.join(datasets,sub_data)  #datasets/Entered name
 if not os.path.isdir(path):
-    os.makedirs(path)
+    os.makedirs(path)  
 (width, height) = (130,100)        #frame.shape[:2]
 face_cascade = cv2.CascadeClassifier(haar_file) #algorithm  loading the haar file
 
