@@ -8,3 +8,6 @@ systems can be used to identify people in photos, video, or in real-time.
 3.Blind assistance
 4.Attendance system
 5.Payments
+
+
+![image](https://github.com/user-attachments/assets/9041944f-059d-4fa3-b2b7-7df00f6ca34a)
